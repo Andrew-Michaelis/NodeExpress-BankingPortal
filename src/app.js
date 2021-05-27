@@ -18,7 +18,7 @@ const userData = fs.readFileSync(
 );
 const users = JSON.parse(userData);
 
-app.get('/', (req, res) => res.render('index', {title: 'Acconut Summary', accounts}));
+app.get('/', (req, res) => res.render('index', {title: 'Account Summary', accounts}));
 
 app.get("/savings", (req, res) => {
     res.render("account", {account: accounts.savings});
